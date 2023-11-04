@@ -1,26 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form>
-        <label for="fname">Current Location:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Destination:</label><br>
-        <input type="text" id="lname" name="lname">
-        <button>SUBMIT</button>
+<div class="container">
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/style2.css">
+    <!-- <div class="container-close">&times;</div> -->
+    <img
+      src="https://wallpapers.com/images/hd/beach-sunset-pictures-43h9lzv2hp9lycm6.jpg"
+      alt="image">
+    <div class="container-text">
+      <h2>Kuch daal do yaha<br> fill karne</h2>
+      <!-- <p>Sign up to receive ideas, free <br> components and free resources plus 15% on all of our <br> pro UI kits.</p> -->
+      <form method="POST" action="/search">
+        <input type="text" id="source" name="source" value="{{ request.form['source'] }}" placeholder="From" required>
+        <input type="text" id="destination" name="destination" value="{{ request.form['destination'] }}" placeholder="To" required>
+      <button type="submit">Search</button>
       </form>
-</body>
-</html>
-
-<!--
-    monuments
-    beach
-    mountains
-    forests
-    waterfall
-    temples
--->
+      <!-- <span>No spams included</span> -->
+    </div>
+  </div>

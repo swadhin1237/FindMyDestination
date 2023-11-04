@@ -32,6 +32,18 @@ def location():
     addr=loca()
     return addr
 
+@app.route('/search', methods=['GET','POST'])
+def search():
+    if request.method == 'POST':
+        source = request.form['source']
+        destination = request.form['destination']
+
+        result = f'Searching from {source} to {destination}...'
+        print(result)
+        return render_template('search.html', result=result)
+
+    return render_template('search.html')
+
 @app.route('/map')
 def map():
     addr=loca()
@@ -40,10 +52,7 @@ def map():
     folium.Marker(addr, popup='My Location').add_to(map)
     map.save('templates/map.html')
     return render_template('map.html')
-@app.route('/search')
-def search():
-    return render_template('search.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
-
