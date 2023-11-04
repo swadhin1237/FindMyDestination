@@ -4,7 +4,7 @@ import torch
 import os
 import csv
 
-IMAGE_PATH = '/content/drive/MyDrive/test.jpeg'
+IMAGE_PATH = './test.jpeg'
 layer_index = 10
 
 
@@ -48,7 +48,7 @@ def get_tensor_by_path(path):
 
 input_image_tensor = get_tensor_by_path(IMAGE_PATH)
 
-image_dir = '/content/drive/MyDrive/pics'
+image_dir = './pics'
 all_files = os.listdir(image_dir)
 image_files = [f for f in all_files if f.lower().endswith(
     ('.jpg', '.jpeg', '.png'))]
