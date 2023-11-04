@@ -9,14 +9,15 @@ import json
 from .model import result
 
 data=[]
+source=""
+destination=""
 
+
+app = Flask(__name__)
+api = Api(app)
 
 def getImage(location_name):
     pass
-app = Flask(__name__)
-
-
-api = Api(app)
 
 @app.route('/')
 def index():
@@ -27,7 +28,9 @@ def index():
 @app.route('/search', methods=['GET','POST'])
 def search():
     if request.method == 'POST':
+        global source
         source = request.form['source']
+        global destination
         destination = request.form['destination']
         tag=request.form['tag']
         global data
@@ -41,6 +44,27 @@ def output():
     global data
     print(data)
     return render_template('output.html',locations=data)
+
+@app.route('/map/<idx>')
+def map(idx):
+    x=data[0]['Coordinates']['Latitude']
+    y=data[0]['Coordinates']['Longitude']
+    dest=[x,y]
+    print(dest)
+
+    map = folium.Map(location=dest, zoom_start=6)
+
+    loc = Nominatim(user_agent="GetLoc")
+
+    getLoc = loc.geocode(source)
+    print(getLoc.address)
+
+    addr = [getLoc.latitude, getLoc.longitude]
+
+    folium.Marker(addr, popup='My Location').add_to(map)
+    folium.Marker(dest, popup='Destination').add_to(map)
+    map.save('templates/map.html')
+    return render_template('map.html')
 
 @app.route('/search/<idx>')
 def get_image_info(idx):
