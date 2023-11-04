@@ -1,0 +1,114 @@
+{
+    "Temples": [
+      {
+        "Name": "Shree Somnath Jyotirling Temple",
+        "Images": [
+          "https://lh5.googleusercontent.com/p/AF1QipOJnhL_lUo0enwUr9iMcY0Cu5Zfqe8STRC2QeW-=w408-h293-k-no",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtUzJdUG74dpVwbqljLPuhyav46Jlvh59CA&usqp=CAU",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpfaw_ZLD57zFQP6JNKEmgretLoeSce9SwdQ&usqp=CAU"
+        ],
+        "Location": "Somnath Mandir Rd, Somnath, Prabhas Patan, Gujarat 362268",
+        "Coordinates": {
+          "Latitude": 20.88809185140322,
+          "Longitude": 70.4011463005054
+        }
+      },
+      {
+        "Name": "Badrinath Temple, Uttarakhand",
+        "Images": [
+          "https://lh3.googleusercontent.com/gps-proxy/AFm_dcQBYH63ilyv9pVttODW5-7q5NdcmJzIrz1gopclp-CE7zyA1-1pIoAISeFbTqwH0rkX5a39qCLsTYgtItRW9ZJlE0C_fjc98tjj6XleJIhG3SgfHGPPardX-QEJ_Q2uwU3Y4mawG1ydbFrjACZwJ_FmVjQSPuky0hdIibs5JtwCIS0LOHuGi73elg=w408-h272-k-no",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWYE-PRCUMfBg7mMSZkN_9fqVCCazk0KfMkg&usqp=CAU",
+          "https://www.namasteindiatrip.com/blog/wp-content/uploads/2018/07/Badrinath-Temple-Uttarakhand.jpg"
+        ],
+        "Location": "Badri to Mata Murti road, Badrinath, Uttarakhand 246422",
+        "Coordinates": {
+          "Latitude": 30.90775953658472,
+          "Longitude": 79.4089680851403
+        }
+      },
+      {
+        "Name": "Shree Jagannath Temple, Puri",
+        "Images": [
+          "https://www.namasteindiatrip.com/blog/wp-content/uploads/2019/04/Jagannath-Temple-Puri.jpg",
+          "https://media.gettyimages.com/id/1484152228/photo/puri-jagannath-temple-from-front-with-clear-blue-sky-as-backdrop.jpg?s=612x612&w=0&k=20&c=YpPw0u-ge8rww3VrLJCK5Y7haH-VmNHgWbXzqz4J3QA=",
+          "https://lh5.googleusercontent.com/p/AF1QipONEb0ArZ-Um3qquh-XnwWGlZwbJ7ibiTYjNZKe=w408-h305-k-no"
+        ],
+        "Location": "Bali Sahi, Puri, Odisha 752001",
+        "Coordinates": {
+          "Latitude": 20.46870206438353,
+          "Longitude": 86.24199153398787
+        }
+      },
+      {
+        "Name": "Shri Kashi Vishwanath Temple, Varanasi",
+        "Images": [
+          "https://lh5.googleusercontent.com/p/AF1QipP4c8ozxzWqS-vOxBigD-68SggxhdibPOVHg--w=w408-h309-k-no"
+        ],
+        "Location": "Lahori Tola, Varanasi, Domari, Uttar Pradesh 221001",
+        "Coordinates": {
+          "Latitude": 25.31112474611372,
+          "Longitude": 83.0108606869724
+        }
+      },
+      {
+        "Name": "Meenakshi Amman Temple, Tamil Nadu",
+        "Images": [
+          "https://lh5.googleusercontent.com/p/AF1QipO8_VJ4ErgBiV2EhJoUPUb6OdmUj22qtuPGY3KL=w408-h609-k-no",
+          "https://www.namasteindiatrip.com/blog/wp-content/uploads/2022/07/Meenakshi-Amman-Temple.jpg"
+        ],
+        "Location": "Madurai Main, Madurai, Tamil Nadu 625001",
+        "Coordinates": {
+          "Latitude": 9.919599606204573,
+          "Longitude": 78.11928815236874
+        }
+      },
+      {
+        "Name": "Kedarnath Temple, Uttarakhand",
+        "Images": [
+          "https://www.namasteindiatrip.com/blog/wp-content/uploads/2022/03/Kedarnath-Temple.jpg",
+          "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia.org%2Fcommons%2F3%2F30%2FKedarnath_Temple.jpg&tbnid=gU-9T97LDK_vZM&vet=12ahUKEwjxv8m8lqqCAxXUoOkKHRTsALUQMygAegQIARAt..i&imgrefurl=https%3A%2F%2Fhi.wikipedia.org%2Fwiki%2F%25E0%25A4%2595%25E0%25A5%2587%25E0%25A4%25A6%25E0%25A4%25BE%25E0%25A4%25B0%25E0%25A4%25A5%25E0%25A4%25AE%25E0%25A4%25A8%25E0%25A5%258D%25E0%25A4%25A6%25E0%25A4%25BF%25E0%25A4%25B0&docid=d6dzuJLNaPX_JM&w=3072&h=2048&q=Kedarnath%20Temple%20(%E0%A4%95%E0%A5%87%E0%A4%A6%E0%A4%BE%E0%A4%B0%E0%A4%A5%20%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%BF%E0%A4%B0)%2C%20Uttarakhand&ved=2ahUKEwjxv8m8lqqCAxXUoOkKHRTsALUQMygAegQIARAt"
+        ],
+        "Location": "Kedarnath, Uttarakhand 246445",
+        "Coordinates": {
+          "Latitude": 30.640752874770957,
+          "Longitude": 79.11084025891932
+        }
+      },
+      {
+        "Name": "Ram Janmabhoomi Temple, Ayodhya",
+        "Images": [
+          "https://www.namasteindiatrip.com/blog/wp-content/uploads/2018/07/Ram-Janmabhoomi-Temple-Ayodhya.jpg",
+          "https://lh5.googleusercontent.com/p/AF1QipMt_BX5gDxrzMs4OWQKaFDX3ngvK0le3SwMhY89=w408-h292-k-no"
+        ],
+        "Location": "Sai Nagar, Ayodhya, Uttar Pradesh 224123",
+        "Coordinates": {
+          "Latitude": 26.794633391770766,
+          "Longitude": 82.19704716873602
+        }
+      },
+      {
+        "Name": "Tungnath Mahadev Temple, Uttarakhand",
+        "Images": [
+          "https://www.namasteindiatrip.com/blog/wp-content/uploads/2019/04/Tungnath-Temple.jpg",
+          "https://lh5.googleusercontent.com/p/AF1QipPxNNkpp9BW9udjHXaaZkZsuKJG5cg9o4chrpij=w408-h306-k-no"
+        ],
+        "Location": "Rudraprayag, Uttarakhand 246419",
+        "Coordinates": {
+          "Latitude": 30.48963321093567,
+          "Longitude": 79.22205873011458
+        }
+      },
+      {
+        "Name": "Akshardham Temple, Delhi",
+        "Images": [
+          "https://www.namasteindiatrip.com/blog/wp-content/uploads/2019/04/Akshardham-Temple-Delhi.jpg",
+          "https://lh5.googleusercontent.com/p/AF1QipMHxLSqI6J0sQQp60YmEiUT7K1w_CiehPDO7kGM=w408-h541-k-no"
+        ],
+        "Location": "Noida Mor, Pandav Nagar, New Delhi, Delhi, 110092",
+        "Coordinates": {
+          "Latitude": 28.612654638481608,
+          "Longitude": 77.27750866007291
+        }
+      }
+    ]
+}

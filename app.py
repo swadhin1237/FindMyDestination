@@ -5,6 +5,11 @@ from geopy.point import Point
 import folium
 from flask_restful import Api, Resource, reqparse
 import random
+import json
+
+# Read and parse the JSON file
+with open('dataset.json', 'r') as json_file:
+    data = json.load(json_file)
 
 
 def loca():
@@ -37,8 +42,8 @@ def search():
     if request.method == 'POST':
         source = request.form['source']
         destination = request.form['destination']
+        tag=request.form['tag']
 
-        result = f'Searching from {source} to {destination}...'
         print(result)
         return render_template('search.html', result=result)
 
@@ -53,6 +58,13 @@ def map():
     map.save('templates/map.html')
     return render_template('map.html')
 
+@app.route('/output')
+def output():
+    return render_template('output.html',locations=data)
 
+@app.route('/search/<idx>')
+def get_image_info(idx):
+    # Simulate retrieving image information (replace with your logic)
+    return "yay"
 if __name__ == "__main__":
     app.run(debug=True)
