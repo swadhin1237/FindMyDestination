@@ -3,3 +3,6 @@ geocoder
 folium
 flask_restful
 pyunsplash
+Pillow
+transformers
+torch
