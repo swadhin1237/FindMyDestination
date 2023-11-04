@@ -3,6 +3,9 @@ import geocoder
 from geopy.geocoders import Nominatim
 from geopy.point import Point
 import folium
+from flask_restful import Api, Resource, reqparse
+import random
+
 
 def loca():
     g=geocoder.ip("me")
@@ -16,6 +19,9 @@ def loca():
 def getImage(location_name):
     pass
 app = Flask(__name__)
+
+
+api = Api(app)
 
 @app.route('/')
 def index():
