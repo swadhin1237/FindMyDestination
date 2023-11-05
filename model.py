@@ -145,11 +145,12 @@ def result(name,tag):
         arr=get_similar_Temples(photo.link_download)
     elif tag=="mountain":
         arr=get_similar_Mountains(photo.link_download)
-    print(arr)
+    # print(arr)
     fin=[]
     for i in range(0,5):
         fin.append(arr[i][1])
     return fin
 
 
-result("niagara falls")
+lol=result("mount everest","mountain")
+print(lol)

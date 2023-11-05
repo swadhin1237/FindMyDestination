@@ -1,4 +1,27 @@
-{
+import math
+
+# Function to calculate the Haversine distance between two sets of coordinates
+def haversine_distance(coord1, coord2):
+    # Radius of the Earth in kilometers
+    radius = 6371.0
+
+    # Convert latitude and longitude from degrees to radians
+    lat1 = math.radians(coord1['Latitude'])
+    lon1 = math.radians(coord1['Longitude'])
+    lat2 = math.radians(coord2['Latitude'])
+    lon2 = math.radians(coord2['Longitude'])
+
+    # Haversine formula
+    dlon = lon2 - lon1
+    dlat = lat2 - lat1
+    a = math.sin(dlat / 2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2)**2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    distance = radius * c
+
+    return distance
+
+# Example data with temples, waterfalls, and mountains
+data = {
     "Temples": [
       {
         "Name": "Shree Somnath Jyotirling Temple",
@@ -12,7 +35,6 @@
           "Latitude": 20.88809185140322,
           "Longitude": 70.4011463005054
         }
-        ,"Cluster":9
       },
       {
         "Name": "Badrinath Temple, Uttarakhand",
@@ -26,7 +48,6 @@
           "Latitude": 30.90775953658472,
           "Longitude": 79.4089680851403
         }
-         ,"Cluster":8
       },
       {
         "Name": "Shree Jagannath Temple, Puri",
@@ -40,7 +61,6 @@
           "Latitude": 20.46870206438353,
           "Longitude": 86.24199153398787
         }
-        ,"Cluster":10
       },
       {
         "Name": "Shri Kashi Vishwanath Temple, Varanasi",
@@ -52,7 +72,6 @@
           "Latitude": 25.31112474611372,
           "Longitude": 83.0108606869724
         }
-        ,"Cluster":12
       },
       {
         "Name": "Meenakshi Amman Temple, Tamil Nadu",
@@ -65,7 +84,6 @@
           "Latitude": 9.919599606204573,
           "Longitude": 78.11928815236874
         }
-        ,"Cluster":1
       },
       {
         "Name": "Kedarnath Temple, Uttarakhand",
@@ -78,7 +96,6 @@
           "Latitude": 30.640752874770957,
           "Longitude": 79.11084025891932
         }
-        ,"Cluster":8
       },
       {
         "Name": "Ram Janmabhoomi Temple, Ayodhya",
@@ -91,7 +108,6 @@
           "Latitude": 26.794633391770766,
           "Longitude": 82.19704716873602
         }
-        ,"Cluster":12
       },
       {
         "Name": "Tungnath Mahadev Temple, Uttarakhand",
@@ -104,7 +120,6 @@
           "Latitude": 30.48963321093567,
           "Longitude": 79.22205873011458
         }
-        ,"Cluster":8
       },
       {
         "Name": "Akshardham Temple, Delhi",
@@ -117,7 +132,6 @@
           "Latitude": 28.612654638481608,
           "Longitude": 77.27750866007291
         }
-        ,"Cluster":13
       }
     ],
     "WaterFalls": [
@@ -132,7 +146,6 @@
             "Latitude": 8.942205975474767,
             "Longitude": 77.16512659839518
           }
-          ,"Cluster":1
         },
         {
           "Name": "Courtallam Falls",
@@ -145,7 +158,6 @@
             "Latitude": 8.931019567611102,
             "Longitude": 77.23789904072308
           }
-          ,"Cluster":1
         },
         {
           "Name": "SATHODI FALLS",
@@ -158,7 +170,6 @@
             "Latitude": 14.950683948148148,
             "Longitude": 74.57941293554956
           }
-          ,"Cluster":4
         },
         {
           "Name": "MAGOD FALLS",
@@ -171,7 +182,6 @@
             "Latitude": 14.851044357738484,
             "Longitude": 74.75127889161575
           }
-          ,"Cluster":4
         },
         {
           "Name": "ATHIRAPPILLY FALLS",
@@ -184,7 +194,6 @@
             "Latitude": 10.285225543122365,
             "Longitude": 76.56987325257484
           }
-          ,"Cluster":1
         },
         {
           "Name": "DUDHSAGAR FALLS",
@@ -197,7 +206,6 @@
             "Latitude": 15.316432647879767,
             "Longitude": 74.31391557720175
           }
-          ,"Cluster":4
         },
         {
           "Name": "NOHKALIKAI FALLS",
@@ -210,7 +218,6 @@
             "Latitude": 25.275559193072418,
             "Longitude": 91.68608191607822
           }
-          ,"Cluster":11
         },
         {
           "Name": "JOG FALLS",
@@ -223,7 +230,6 @@
             "Latitude": 14.2301951552093,
             "Longitude": 74.81245772758568
           }
-          ,"Cluster":4
         },
         {
           "Name": "UNCHALLI FALLS",
@@ -236,7 +242,6 @@
             "Latitude": 14.409352882433602,
             "Longitude": 74.74772690558359
           }
-          ,"Cluster":4
         },
         {
           "Name": "Barehipani Waterfall",
@@ -249,7 +254,6 @@
             "Latitude": 21.93298910296506,
             "Longitude": 86.38068082315479
           }
-          ,"Cluster":10
         }
       ],
       "Mountains": [
@@ -264,7 +268,6 @@
             "Latitude": 13.391803508821944,
             "Longitude": 75.72287439773328
           }
-          ,"Cluster":2
         },
         {
           "Name": "Triund Hill",
@@ -277,7 +280,6 @@
             "Latitude": 32.260398603147316,
             "Longitude": 76.35653578274666
           }
-          ,"Cluster":7
         },
         {
           "Name": "Kangchenjunga",
@@ -290,7 +292,6 @@
             "Latitude": 27.70279453746622,
             "Longitude": 88.14762077998685
           }
-          ,"Cluster":5
         },
         {
           "Name": "Dainkund Peak",
@@ -303,7 +304,6 @@
             "Latitude": 32.520414614860705,
             "Longitude": 76.03574782016224
           }
-          ,"Cluster":7
         },
         {
           "Name": "Apharwat Peak",
@@ -316,7 +316,6 @@
             "Latitude": 34.03969263045522,
             "Longitude": 74.3236247929554
           }
-          ,"Cluster":6
         },
         {
           "Name": "Nandi Hills",
@@ -329,7 +328,6 @@
             "Latitude": 13.381807858895625,
             "Longitude": 77.67412535359709
           }
-          ,"Cluster":3
         },
         {
           "Name": "Doddabetta Peak",
@@ -342,7 +340,6 @@
             "Latitude": 11.400831140583273,
             "Longitude": 76.7357735824683
           }
-          ,"Cluster":1
         },
         {
           "Name": "Chembra Peak",
@@ -355,7 +352,6 @@
             "Latitude": 11.512174839250857,
             "Longitude": 76.08814354560745
           }
-          ,"Cluster":1
         },
         {
           "Name": "Yume Samdong (Zero Point)",
@@ -368,7 +364,6 @@
             "Latitude": 27.935000127356783,
             "Longitude": 88.73635692091717
           }
-          ,"Cluster":5
         },
         {
           "Name": "Chitkul",
@@ -381,7 +376,42 @@
             "Latitude": 31.353067503657343,
             "Longitude": 78.43612569971108
           }
-          ,"Cluster":8
         }
       ]
 }
+
+# Define the maximum distance a person can travel in one day (in kilometers)
+max_distance_per_day = 30  # Adjust this value as needed
+
+# Initialize empty clusters
+clusters = []
+
+# Iterate through each category (Temples, Waterfalls, Mountains)
+for category, locations in data.items():
+    for location in locations:
+        # Create a new cluster for the location
+        new_cluster = [(location, category)]
+
+        # Iterate through the remaining locations to form clusters
+        for other_location in locations:
+            if location != other_location:
+                distance = haversine_distance(location['Coordinates'], other_location['Coordinates'])
+                if distance <= max_distance_per_day:
+                    new_cluster.append((other_location, category))
+
+        # Check if the new cluster already exists in the clusters list
+        is_duplicate = False
+        for cluster in clusters:
+            if set(new_cluster) == set(cluster):
+                is_duplicate = True
+                break
+        # If the new cluster is not a duplicate, add it to the clusters list
+        if not is_duplicate:
+            clusters.append(new_cluster)
+
+# Print the clusters
+for i, cluster in enumerate(clusters):
+    print(f"Cluster {i + 1}:")
+    for location, category in cluster:
+        print(f"{location['Name']} - {category}")
+    print("\n")
