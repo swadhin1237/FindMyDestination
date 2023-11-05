@@ -35,15 +35,15 @@ To get started with this project, follow these steps:
 The project structure is organized as follows:
 
 FindMyDestination/
-    ├── app.py            # Flask web application
-    ├── static/
-    │   ├── images/       # Static images
-    │   ├── css/          # Cascading Style Sheets
-    │   ├── js/           # JavaScript files
-    ├── templates/        # HTML templates
-    ├── datafile and model           # Data files
-    ├── requirements.txt  # Python dependencies
-    ├── README.md         # Project documentation
+-    ├── app.py            # Flask web application
+-    ├── static/
+-    │   ├── images/       # Static images
+-    │   ├── css/          # Cascading Style Sheets
+-    │   ├── js/           # JavaScript files
+-    ├── templates/        # HTML templates
+-    ├── datafile and model           # Data files
+-    ├── requirements.txt  # Python dependencies
+-    ├── README.md         # Project documentation
 
 ## Usage
 <a name="usage"></a>
