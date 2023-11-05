@@ -5,12 +5,12 @@
       src="https://wallpapers.com/images/hd/beach-sunset-pictures-43h9lzv2hp9lycm6.jpg"
       alt="image">
     <div class="container-text">
-      <h2>Kuch daal do yaha<br> fill karne</h2>
+      <h2>Search for your<br>dream destination</h2>
       <!-- <p>Sign up to receive ideas, free <br> components and free resources plus 15% on all of our <br> pro UI kits.</p> -->
       <form method="POST" action="/search">
         <input type="text" id="source" name="source" value="{{ request.form['source'] }}" placeholder="From" required>
         <input type="text" id="destination" name="destination" value="{{ request.form['destination'] }}" placeholder="To" required>
-        <select name="tag" id="tag" style="height: 100%; width: 100%;">
+        <select name="tag" id="tag" style="margin: 5px; height: 100%; width: 100%;">
           <option value="" selected>Select type of destination</option>
           <option value="waterfall">Waterfall</option>
           <option value="temple">Temple</option>

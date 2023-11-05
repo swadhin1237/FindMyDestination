@@ -311,7 +311,7 @@ body {
 }
 
 .logo {
-  color: var(--white-1);
+  color: var(--mikado-yellow);
   font-size: var(--fs-2);
   font-weight: var(--fw-600);
 }

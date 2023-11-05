@@ -12,6 +12,7 @@ import requests
 data=[]
 source=""
 destination=""
+cluster=0
 
 with open('data.json', 'r') as json_file:
     data_dict = json.load(json_file)
@@ -56,6 +57,7 @@ def output():
 def map(idx):
     # x=data[0]['Coordinates']['Latitude']
     # y=data[0]['Coordinates']['Longitude']
+    cluster=data[0]['Cluster']
     x=data_dict['Temples'][0]['Coordinates']['Latitude']
     y=data_dict['Temples'][0]['Coordinates']['Longitude']
     dest=[x,y]
@@ -73,7 +75,11 @@ def map(idx):
 
     folium.Marker(addr, popup='My Location').add_to(map)
     # folium.Marker(dest, popup='Destination').add_to(map)
-    
+    for locs in data2[cluster]:
+        x=locs['Coordinates']['Latitude']
+        y=locs['Coordinates']['Longitude']
+        dest=[x,y]
+        folium.Marker(dest, popup=locs['Name']).add_to(map)
 
     map.save('templates/map.html')
     

@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/assets/css/style.css" />
-
+    
     <title>Document</title>
+    <style>
+      body {
+          background-image: url('https://static.vecteezy.com/system/resources/previews/002/065/154/original/airplane-passport-and-boarding-pass-on-empty-background-with-copy-space-for-text-travel-background-illustration-free-vector.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin-left: 30%;
+      }
+  </style>
 </head>
 
 <body>
@@ -28,6 +36,7 @@
                             loading="lazy"
                             alt={{locations[0].Name}}
                             class="img-cover"
+                            object-fit="cover"
                           />  
                         </figure>
       
@@ -37,7 +46,7 @@
                           <h3 class="h3 card-title">{{locations[0].Name}}</h3>
                         </div>
                       </a>
-                      <a href="/place/0">Click here for travel plan</a>
+                      <a href="/place/0" class="card-subtitle">Click here for travel plan</a>
                     </li>
       
                     <li class="w-50">
@@ -48,6 +57,7 @@
                             width="1140"
                             height="1100"
                             loading="lazy"
+                            object-fit="cover"
                             class="img-cover"
                           />
                         </figure>
@@ -70,6 +80,8 @@
                             height="480"
                             loading="lazy"
                             class="img-cover"
+                            object-fit="cover"
+
                           />
                         </figure>
       
@@ -89,6 +101,8 @@
                             height="480"
                             loading="lazy"
                             class="img-cover"
+                            object-fit="cover"
+
                           />
                         </figure>
       
@@ -110,6 +124,7 @@
                             height="480"
                             loading="lazy"
                             class="img-cover"
+                            object-fit="cover"
                           />
                         </figure>
       
