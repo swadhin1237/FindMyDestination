@@ -4,6 +4,10 @@
 
 Travel Destination Recommendation is a project that helps users find travel destinations in India that have a similar feel to their desired international destinations. This recommendation system leverages a PyTorch model to analyze and compare images to provide users with visually similar travel options.
 
+# Demo Video
+
+[![Demo Video](https://www.bing.com/ck/a?!&&p=099dd85d24279965JmltdHM9MTY5OTA1NjAwMCZpZ3VpZD0wODZlZjM4OS01Zjg0LTYyN2EtMzg1OS1lMzQyNWUzNjYzZGQmaW5zaWQ9NTU4Mw&ptn=3&hsh=3&fclid=086ef389-5f84-627a-3859-e3425e3663dd&u=a1L2ltYWdlcy9zZWFyY2g_cT1pbWFnZSBvZiBhIGRlbW8gdmlkZW8gZm9yIHRyYXZlbGxpbmcgJkZPUk09SVFGUkJBJmlkPUQ5NzhCMDIwMDY4QTJCREIzODk5RDJCRDg2MERCRjI3MEEzMkU5NDc&ntb=1)](https://drive.google.com/drive/folders/1-q78whNGHJhqd6bzKq9JxE08flJnpKG4?usp=sharing)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
