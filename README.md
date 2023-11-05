@@ -12,6 +12,7 @@ Travel Destination Recommendation is a project that helps users find travel dest
 - [Usage](#usage)
 - [How It Works](#how-it-works)
 - [Contributing](#contributing)
+- [Uniqueness](#unique)
 
 ## Getting Started
 <a name="getting-started"></a>
@@ -57,6 +58,10 @@ FindMyDestination/
 
 ## How It Works
 <a name="how-it-works"></a>
+
+## Uniqueness
+<a name="unique"></a>
+In our project, we've developed the majority of the code from scratch, especially the backend logic and functionality. However, due to time constraints, we've integrated some frontend components from external sources available on the internet. While we've customized and integrated these components to suit our project's needs, the core logic and backend development were created entirely from the ground up.
 The application works by using a PyTorch model to extract features from images of travel destinations. These features are then used to find visually similar destinations in India. The recommendation system is based on the similarity between the feature representations of images.
 
 ## Contributing
