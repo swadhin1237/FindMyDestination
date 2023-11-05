@@ -58,12 +58,13 @@ FindMyDestination/
 
 ## How It Works
 <a name="how-it-works"></a>
-
-## Uniqueness
-<a name="unique"></a>
-In our project, we've developed the majority of the code from scratch, especially the backend logic and functionality. However, due to time constraints, we've integrated some frontend components from external sources available on the internet. While we've customized and integrated these components to suit our project's needs, the core logic and backend development were created entirely from the ground up.
 The application works by using a PyTorch model to extract features from images of travel destinations. These features are then used to find visually similar destinations in India. The recommendation system is based on the similarity between the feature representations of images.
 
 ## Contributing
 <a name="contributing"></a>
 Contributions to this project are welcome. Feel free to open issues, suggest improvements, or submit pull requests to help make this project even better.
+
+## Uniqueness
+<a name="unique"></a>
+In our project, we've developed the majority of the code from scratch, especially the backend logic and functionality. However, due to time constraints, we've integrated some frontend components from external sources available on the internet. While we've customized and integrated these components to suit our project's needs, the core logic and backend development were created entirely from the ground up.
+
